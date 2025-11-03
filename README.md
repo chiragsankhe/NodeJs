@@ -14,6 +14,7 @@ Node.js is a JavaScript runtime environment that lets you run JavaScript code ou
 - REPL: Interactive shell for testing JavaScript quickly.
 
 🧪 Example: Simple Node.js Server
+```
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -23,6 +24,7 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
   console.log('Server running on port 3000');
 });
+```
 
 
 This creates a basic web server that responds with a message.
