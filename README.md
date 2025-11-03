@@ -1,6 +1,6 @@
 node js learing from prashant sir its 24 h course .
 
-## 🧠 What Is Node.js?
+## 1. 🧠 What Is Node.js?
 Node.js is a JavaScript runtime environment that lets you run JavaScript code outside the browser, typically on servers. It’s built on Chrome’s V8 engine, which makes it fast and efficient.
 ### 🔧 Why Use Node.js?
 - You can build server-side applications using JavaScript.
@@ -29,7 +29,7 @@ server.listen(3000, () => {
 
 This creates a basic web server that responds with a message.
 
-### featues of nodejs
+## 1. featues of nodejs ?
 Node.js is known for its speed, scalability, and non-blocking architecture, making it ideal for building high-performance web applications and APIs. Its key features include asynchronous I/O, event-driven design, and the ability to use JavaScript for both frontend and backend development.
 Here’s a detailed breakdown of its most important features:
 
