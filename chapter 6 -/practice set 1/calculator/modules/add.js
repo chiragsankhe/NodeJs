@@ -1,10 +1,8 @@
 const add = (req, res) => {
     const body = [];
-    const result = 0;
 
     req.on('data', (chunk) => {
         body.push(chunk);
-        console.log("data");
     });
 
     req.on('end', () => {
@@ -14,20 +12,16 @@ const add = (req, res) => {
         const num1 = parseFloat(queryParam.get('num1'));
         const num2 = parseFloat(queryParam.get('num2'));
 
-        result = num1 + num2;
-        console.log("end");
-        res.end();
-    });
+        const result = num1 + num2;
 
-    res.setHeader('Content-Type', 'text/html');
-    res.write(`
+        res.setHeader('Content-Type', 'text/html');
+        res.write(`
         <html lang="en">
             <head>
                 <title>Addition Result</title>
             </head>
             <body>
                 <div>
-                <h1> 
                     <h1>Result: ${num1} + ${num2} = ${result}</h1>
                     <a href="/calculator">Perform another calculation</a>
                     <br/><br/>
@@ -36,6 +30,8 @@ const add = (req, res) => {
             </body>
         </html>
         `);
+        res.end();
+    });
 };
 
 module.exports = add;
